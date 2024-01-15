@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="game">
+    <div class="row">
+      <div class="cell" id="0"></div>
+      <div class="cell" id="1"></div>
+      <div class="cell" id="2"></div>
+    </div>
+    <div class="row">
+      <div class="cell" id="3"></div>
+      <div class="cell" id="4"></div>
+      <div class="cell" id="5"></div>
+    </div>
+    <div class="row">
+      <div class="cell" id="6"></div>
+      <div class="cell" id="7"></div>
+      <div class="cell" id="8"></div>
+    </div>
+    <div class="notification" id="notification">
+      <span id="winnerText"></span>
+      </div>
+      <div class="start-button">
+        <label for="startingPlayer" class="label">Choose starting player: </label>
+        <select id="startingPlayer" class="select" onchange="changeButtonColor()">
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+        <button onclick="startGame()" class="button red-bg">Start Game</button>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

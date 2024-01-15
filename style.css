@@ -1,0 +1,147 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px; /* Change font size as needed */
+  font-weight: bold;
+  background-color: #5a5a5a;
+  color: #333; /* Change text color */
+  transition: background-color 0.5s ease-in-out; /*Transition to bg color */
+}
+
+h1 {
+
+  margin-left: 20px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 125px;
+  height: 125px;
+  border: 5px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+  border-radius: 10px; /* Make borders rounded */
+}
+
+.cell:hover {
+  background-color: #8b8b8b;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+
+color: blue
+}
+
+.red-bg-body {
+  background-color: lightcoral;
+}
+
+.blue-bg-body {
+  background-color: rgb(168, 211, 225);
+}
+
+/* Notification configs */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: -300px;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 5px;
+  display: none;
+  transition: left 0.5s ease-in-out;
+  font-size: 35px;
+}
+
+.notification.show {
+  left: 20px;
+  display: block;
+  animation: slideIn 0.5s forwards;
+}
+
+.notification.hide { /*Hide */
+  left: -300px;
+  opacity: 0;
+}
+
+/* Colors of the notifications background */
+.red-bg {
+  background-color: lightcoral;
+  color: rgb(0, 0, 0);
+}
+
+.blue-bg {
+  background-color: lightblue;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Select player button configs: */
+
+/* Styling for the select dropdown */
+.start-button select {
+  font-family: 'Monteserrat,', sans-serif;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Styling for the start button */
+
+.start-button button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.start-button {
+  margin-top: 65px; /* Adding margin-top to create space */
+}
+
+/* Additional classes for different colors */
+
+.red-bg {
+  background-color: lightcoral;
+  color: white;
+}
+
+.blue-bg {
+  background-color: lightblue;
+  color: white;
+}
+
+.draw-bg {
+  background-color: #333;
+  color: black;
+}
